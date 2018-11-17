@@ -13,7 +13,7 @@ meta:
 
 * **本文仅介绍，搭建静态博客的过程，具体教程及文档请点击进入 [vuepress中文网](https://www.vuepress.cn/ "vuepress")**  
 
-* [点击进入使用 vuepress 部署到 github 的博客](https://zhb333.github.io/readme-blog/ "张焕标的博客") 
+* [点击进入博客](https://zhb333.github.io/readme-blog/ "张焕标的博客") 
 
 * [点击查看项目代码](https://github.com/zhb333/readme-blog "zhb333/readme-blog")
 
