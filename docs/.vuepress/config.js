@@ -1,4 +1,40 @@
-module.exports = {
+const sidebar = {
+  '/WEB/': [
+    {
+      title: 'Vue',
+      children: [
+        'Vue/vuepress-blog'
+      ]
+    },
+
+    {
+      title: 'React',
+      children: [
+        'React/react-router'
+      ]
+    }
+  ]
+}
+
+const nav = [
+  {
+    text: '前端栈',
+    items: [
+      { text: 'Vue', link: '/WEB/' + sidebar['/WEB/'][0]['children'][0] },
+      { text: 'React', link: '/WEB/' + sidebar['/WEB/'][1]['children'][0] }
+    ]
+  },
+  {
+    text: 'Python',
+    link: '/'
+  },
+  {
+    text: '杂谈',
+    link: '/'
+  }
+]
+
+var config = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
@@ -7,36 +43,10 @@ module.exports = {
   description: '种一棵树最好的时间是十年前，其次是现在',
   themeConfig: {
     repo: 'zhb333/readme-blog',
-
-    nav: [
-      {
-        text: '前端栈',
-        items: [
-          { text: 'Vue', link: '/WEB/Vue/' },
-          { text: 'React', link: '/WEB/React/' },
-          { text: 'ESMAscript', link: '/WEB/ESMAscript/' },
-          { text: 'HTML5', link: '/WEB/HTML5/' },
-          { text: 'CSS3', link: '/WEB/CSS3/' },
-          { text: 'Webpack', link: '/WEB/Webpack/' }
-        ]
-      },
-      {
-        text: 'Python',
-        items: [
-          { text: 'Python', link: '/Python/Python/' },
-          { text: 'Django', link: '/Python/Django/' },
-          { text: 'Flask', link: '/Python/Flask/' }
-        ]
-      },
-      {
-        text: '杂谈',
-        items: [
-          { text: '技术相关', items: [
-            {text: 'Git', link: '/other/skill/Git/'}
-          ] },
-          { text: '生活相关', link: '/other/life/' },
-        ]
-      }
-    ]
+    repoLabel: '代码',
+    nav,
+    sidebar,
   }
 }
+
+module.exports = config
