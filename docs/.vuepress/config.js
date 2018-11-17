@@ -23,14 +23,6 @@ const nav = [
       { text: 'Vue', link: '/WEB/' + sidebar['/WEB/'][0]['children'][0] },
       { text: 'React', link: '/WEB/' + sidebar['/WEB/'][1]['children'][0] }
     ]
-  },
-  {
-    text: 'Python',
-    link: '/'
-  },
-  {
-    text: '杂谈',
-    link: '/'
   }
 ]
 
@@ -44,8 +36,13 @@ var config = {
   themeConfig: {
     repo: 'zhb333/readme-blog',
     repoLabel: '代码',
+    editLinks: true,
+    editLinkText: '查看原文|编辑此页',
     nav,
     sidebar,
+  },
+  markdown: {
+    lineNumbers: true
   }
 }
 
