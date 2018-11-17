@@ -7,13 +7,19 @@ meta:
   - name: keywords
     content: vuepress 静态博客
 ---
-# 使用`vuepress`搭建静态博客
+# Vuepress 搭建带评论功能的静态博客
 
 > vuepress 是 Vue 驱动的静态站点生成工具  
 
-**本文仅介绍，搭建静态博客的过程，具体教程及文档请点击进入 [vuepress中文网](https://www.vuepress.cn/ "vuepress")**
+* **本文仅介绍，搭建静态博客的过程，具体教程及文档请点击进入 [vuepress中文网](https://www.vuepress.cn/ "vuepress")**  
+
+* [点击进入使用 vuepress 部署到 github 的博客](https://zhb333.github.io/readme-blog/ "张焕标的博客") 
+
+* [点击查看项目代码](https://github.com/zhb333/readme-blog "zhb333/readme-blog")
 
 ## vuepress初始化
+
+### 下面初始化
 
 ```sh
 # 将 github 新创建的仓库克隆到本地
@@ -38,6 +44,8 @@ mkdir docs
 echo '# Hello VuePress' > docs/README.md
 ```
 
+### npm 脚本
+
 然后，给 `package.json` 添加一些 `scripts` 脚本：
 
 ```json
@@ -50,7 +58,10 @@ echo '# Hello VuePress' > docs/README.md
 }
 ```
 
+### 运行本地开发环境
+
 运行 `vurepress` 的本地开发环境
+
 ```sh
 npm run dev
 ```
@@ -59,6 +70,8 @@ npm run dev
 
 ## 基础配置
 
+### 生成静态资源
+
 执行下面的命令，生成静态资源 
 
 ```sh
@@ -66,6 +79,7 @@ npm run build
 ```
 默认情况下，构建的文件会位于 **docs/.vuepress/dist** 中，该文件可以通过 **docs/.vuepress/config.js** 中的 `dest` 字段进行配置。
 
+### 配置
 
 创建 **docs/.vuepress/config.js**， 并进行简单配置
 
@@ -94,10 +108,14 @@ module.exports = config
 
 ## 博客首页
 
+### 公共文件
+
 创建 **docs/.vuepress/public** 用于存放公共文件
 
 我在 **public/** , 存在了 **favicon.ico** 图标， 以及 **zlx.jpg** 首页的头像图片
 
+
+### 简单的首页编写
 
 将 **docs/README.md**设置为首页， 修改代码为：
 
@@ -108,6 +126,8 @@ heroImage: /zlx.jpg
 footer: MIT Licensed | Copyright © 2018 ZhangHuanbiao
 ---
 ```
+
+### 设置网站 ico 图标
 
 配置网站的 **ico** 图标， 修改 **.vuepress/config.js**：
 
@@ -121,6 +141,8 @@ const config = {
 
 
 ## 导航栏
+
+### 配置导航栏
 
 使用 **vuepress** 的默认主题配置导航栏 **.vuepress/config.js**：
 
@@ -150,6 +172,8 @@ const config = {
 }
 ```
 
+### 创建有效的导航资源
+
 为了使得导航栏的链接点击有效， 我们创建两个文件：
 
 **docs/WEB/Vue/vuepress-blog.md**
@@ -175,6 +199,8 @@ const config = {
 
 
 ## 侧边栏
+
+### 侧边栏配置
 
 使用 **vuepress** 的默认主题配置侧边栏 **.vuepress/config.js**：
 
@@ -222,9 +248,12 @@ var config = {
 }
 ```
 
+### 侧边栏效果
+
 访问： **http://localhost:8080/readme-blog/WEB/Vue/vuepress-blog.html**， 可以看到侧边栏已经生成
 
-## 将静态博客网站部署到 **xxx.github.io/readme-blog/**
+
+## 将静态博客网站部署到外网
 
 使用 **gh-pages** 进行项目部署
 
@@ -234,6 +263,67 @@ npm run deploy
 
 过几分钟后，访问 **https://zhb333.github.io/readme-blog/**， 便可以看到在外网成功部署的静态博客
 
+
 ## 评论功能
 
-未完待续...
+我们使用 **valine** 来实现评论功能：
+
+> Valine - 一款快速、简洁且高效的无后端评论系统。
+
+**点击进入 [Valine官网](https://valine.js.org/quickstart.html "Valine") ，需要先注册才能食用**
+
+
+### 安装 Valine
+
+```sh
+# Install leancloud's js-sdk
+npm install leancloud-storage --save
+
+# Install valine
+npm install valine --save
+```
+
+### 注册 vuepress 全局组件
+
+创建 **.vuepress/components/Valine.vue**
+
+```html
+<template>
+  <div id="vcomments"></div>
+</template>
+
+<script>
+export default {
+  name: 'Valine',
+  mounted: function(){
+    // require window 
+    const Valine = require('valine');
+    if (typeof window !== 'undefined') {
+      this.window = window
+      window.AV = require('leancloud-storage')
+      
+    }
+     
+    new Valine({
+      el: '#vcomments' ,
+      appId: '',// your appId
+      appKey: '', // your appKey
+      notify:false, 
+      verify:false, 
+      avatar:'mm', 
+      placeholder: 'just go go' 
+    });
+  },
+}
+</script>
+```
+
+### 使用 Valine
+
+只需要在 **markdown** 中调用即可
+
+```md
+<Valine></Valine>
+```
+
+<Valine></Valine>
