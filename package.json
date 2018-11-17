@@ -1,0 +1,18 @@
+{
+  "name": "readme-blog",
+  "version": "1.0.0",
+  "description": "vuepress readme blog",
+  "main": "index.js",
+  "repository": "git@github.com:zhb333/readme-blog.git",
+  "author": "zhb333 <1140457303@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "npm run build && gh-pages -d docs/.vuepress/dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "vuepress": "^0.14.5"
+  }
+}
