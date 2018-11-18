@@ -13,6 +13,15 @@ const sidebar = {
         'React/react-router'
       ]
     }
+  ],
+
+  '/Python/': [
+    {
+      title: 'Python杂谈',
+      children: [
+        'Python/virtualenv-win'
+      ]
+    }
   ]
 }
 
@@ -22,6 +31,12 @@ const nav = [
     items: [
       { text: 'Vue', link: '/WEB/' + sidebar['/WEB/'][0]['children'][0] },
       { text: 'React', link: '/WEB/' + sidebar['/WEB/'][1]['children'][0] }
+    ]
+  },
+  {
+    text: 'Python',
+    items: [
+      { text: 'Python杂谈', link: '/Python/' + sidebar['/Python/'][0]['children'][0] }
     ]
   }
 ]
