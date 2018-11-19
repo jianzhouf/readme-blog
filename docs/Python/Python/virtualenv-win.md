@@ -94,8 +94,8 @@ mkvirtualenv --python=D:\\app\\python37\\python.ext myenv
 
 如果想更改虚拟环境储存的目录，需要设置一个 **WORKON_HOME** 的系统环境变量， 关于如何设置 Windows 环境变量，请找 [度娘](https://www.baidu.com "百度") 或 [谷哥](https://www.google.com.hk "谷歌")  
 
-
-<img :src="$withBase('/Python/WORKON_HOME.JPG')" alt="WORKON_HOME">
+![WORKON_HOME](https://upload-images.jianshu.io/upload_images/12493822-c7037731f61af48a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/362/format/webp "WORKON_HOME")  
+<!-- <img :src="$withBase('/Python/WORKON_HOME.JPG')" alt="WORKON_HOME"> -->
 
 
 进入虚拟环境
@@ -129,7 +129,7 @@ cdvirtualenv
 
 **pycharm 本身集成了 virtualenv， 创建新项目时会要求生成虚拟环境， 只要把pycharm生成的虚拟环境安装到 virtualenvwrapper 的虚拟环境目录 ，那么 virtualenvwrapper 同样可以管理 Pycharm生成的是虚拟环境**  
 
-
-<img :src="$withBase('/Python/Pycharm_virtualenvwrapper.JPG')" alt="Pycharm 创建虚拟环境">
+![Pycharm 创建虚拟环境](https://upload-images.jianshu.io/upload_images/12493822-1fdaa9871675a5ed.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/778/format/webp "Pycharm 创建虚拟环境")  
+<!-- <img :src="$withBase('/Python/Pycharm_virtualenvwrapper.JPG')" alt="Pycharm 创建虚拟环境"> -->
 
 <Valine></Valine>

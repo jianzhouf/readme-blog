@@ -25,41 +25,42 @@ meta:
 
 * 双击 下载好的 **Pycharm2018.1.5.ext**  
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_01.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-532012134f1082f4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/498/format/webp "Pycharm")  
+<!-- ![所有Pycharm版本](/readme-blog/Python/Pycharm/ "Pycharm")   -->
 
 * 点击 **Next**, 选择安装路径, 建议不要安装到系统盘
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_02.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-0f58d5d1f70a79eb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/497/format/webp "Pycharm")  
 
 * 按照操作系统的位数，勾选下面的两个选项    
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_03.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-2cc05ff82be9dc51.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/498/format/webp "Pycharm")  
 
 * 点击安装    
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_04.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-33f16fb1a462ee26.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/498/format/webp "Pycharm")  
 
 * 耐心稍等片刻...    
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_05.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-1c0347b61af4fc56.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/498/format/webp "Pycharm")  
 
 * 点击安装完成，**请先不要启动 Pycharm**
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_06.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-f534b9efcf5a9288.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/497/format/webp "Pycharm")  
 
 * 打开 Pycharm 的安装路径， 如我的路径是： **D:\app\PyCharm 2018.1.5**， 将补丁 ****JetbrainsCrack-2.10-release-enc.jar**  复制到当前路径
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_007.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-2e6b5158023e0ed0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/705/format/webp "Pycharm")  
 
 * 还需要修改两个配置文件， 这样才能通过补丁破解， 进入安装路径的 **bin** 目录找到 **pycharm.exe.vmoptions** 和 **pycharm64.exe.vmoptions**， 在下面添加一行配置： **-javaagent:D:\app\PyCharm 2018.1.5\JetbrainsCrack-2.10-release-enc.jar** 即通过补丁打开注册引导
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_07.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-dae369d255b4c6f1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/684/format/webp "Pycharm")  
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_008.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-28da3c8689158ccc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/653/format/webp "Pycharm")  
 
 * 现在可以打开 **Pycharm** 了， 如果没有显示注册引导，我们可以通过导航栏的 **help ——>> register** 自行注册， 通过 **activation code** 注册  
 
-![所有Pycharm版本](/readme-blog/Pycharm/install_09.jpg "Pycharm")  
+![所有Pycharm版本](https://upload-images.jianshu.io/upload_images/12493822-f8abde2772311c04.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/945/format/webp "Pycharm")  
 
 * 下面是注册码，你可以稍作更改， 将注册码粘贴到 文本框， 点击 **OK**
 
