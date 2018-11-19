@@ -19,7 +19,8 @@ const sidebar = {
     {
       title: 'Python杂谈',
       children: [
-        'Python/virtualenv-win'
+        'Python/virtualenv-win',
+        'Python/pycharm2018'
       ]
     }
   ]
