@@ -62,5 +62,6 @@ typings/
 
 docs/.vuepress/dist/
 docs/.vuepress/public/Python/
+docs/.vuepress/public/Database/
 
 .idea

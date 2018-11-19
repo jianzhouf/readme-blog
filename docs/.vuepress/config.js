@@ -23,6 +23,15 @@ const sidebar = {
         'Python/pycharm2018'
       ]
     }
+  ],
+
+  '/Database/': [
+    {
+      title: 'MySQL',
+      children: [
+        'MySQL/mysql5.7_install'
+      ]
+    }
   ]
 }
 
@@ -38,6 +47,12 @@ const nav = [
     text: 'Python',
     items: [
       { text: 'Python杂谈', link: '/Python/' + sidebar['/Python/'][0]['children'][0] }
+    ]
+  },
+  {
+    text: '数据库',
+    items: [
+      { text: 'MySQL', link: '/Database/' + sidebar['/Database/'][0]['children'][0] }
     ]
   }
 ]
