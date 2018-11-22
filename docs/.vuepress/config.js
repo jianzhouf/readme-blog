@@ -1,6 +1,13 @@
 const sidebar = {
   '/WEB/': [
     {
+      title: 'ES6',
+      children: [
+        'ES6/es6_1'
+      ]
+    },
+
+    {
       title: 'Vue',
       children: [
         'Vue/vuepress-blog'
@@ -39,8 +46,9 @@ const nav = [
   {
     text: '前端栈',
     items: [
-      { text: 'Vue', link: '/WEB/' + sidebar['/WEB/'][0]['children'][0] },
-      { text: 'React', link: '/WEB/' + sidebar['/WEB/'][1]['children'][0] }
+      { text: 'ES6', link: '/WEB/' + sidebar['/WEB/'][0]['children'][0] },
+      { text: 'Vue', link: '/WEB/' + sidebar['/WEB/'][1]['children'][0] },
+      { text: 'React', link: '/WEB/' + sidebar['/WEB/'][2]['children'][0] }
     ]
   },
   {
