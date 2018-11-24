@@ -3,7 +3,7 @@ const sidebar = {
     {
       title: 'ES6',
       children: [
-        'ES6/es6_1'
+        'ES6/array',
       ]
     },
 
