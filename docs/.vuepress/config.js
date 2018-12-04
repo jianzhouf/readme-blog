@@ -29,6 +29,12 @@ const sidebar = {
         'Python/virtualenv-win',
         'Python/pycharm2018'
       ]
+    },
+    {
+      title: 'Django',
+      children: [
+        'Django/urls'
+      ]
     }
   ],
 
@@ -54,7 +60,8 @@ const nav = [
   {
     text: 'Python',
     items: [
-      { text: 'Python杂谈', link: '/Python/' + sidebar['/Python/'][0]['children'][0] }
+      { text: 'Python杂谈', link: '/Python/' + sidebar['/Python/'][0]['children'][0] },
+      { text: 'Django', link: '/Python/' + sidebar['/Python/'][1]['children'][0] }
     ]
   },
   {
