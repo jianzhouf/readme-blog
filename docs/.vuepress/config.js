@@ -33,7 +33,8 @@ const sidebar = {
     {
       title: 'Django',
       children: [
-        'Django/urls'
+        'Django/urls',
+        'Django/templates_1',
       ]
     }
   ],
