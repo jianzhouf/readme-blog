@@ -35,6 +35,7 @@ const sidebar = {
       children: [
         'Django/urls',
         'Django/templates_1',
+        'Django/templates_2',
       ]
     }
   ],
