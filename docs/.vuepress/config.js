@@ -36,6 +36,9 @@ const sidebar = {
         'Django/urls',
         'Django/templates_1',
         'Django/templates_2',
+        'Django/templates_3',
+        'Django/templates_4',
+        'Django/templates_5',
       ]
     }
   ],
