@@ -1,6 +1,12 @@
 const sidebar = {
   '/WEB/': [
     {
+      title: 'NodeJS',
+      children: [
+        'Node/nvm-nrm-npm'
+      ]
+    },
+    {
       title: 'ES6',
       children: [
         'ES6/array',
@@ -57,9 +63,10 @@ const nav = [
   {
     text: '前端栈',
     items: [
-      { text: 'ES6', link: '/WEB/' + sidebar['/WEB/'][0]['children'][0] },
-      { text: 'Vue', link: '/WEB/' + sidebar['/WEB/'][1]['children'][0] },
-      { text: 'React', link: '/WEB/' + sidebar['/WEB/'][2]['children'][0] }
+      { text: 'NodeJS', link: '/WEB/' + sidebar['/WEB/'][0]['children'][0] },
+      { text: 'ES6', link: '/WEB/' + sidebar['/WEB/'][1]['children'][0] },
+      { text: 'Vue', link: '/WEB/' + sidebar['/WEB/'][2]['children'][0] },
+      { text: 'React', link: '/WEB/' + sidebar['/WEB/'][3]['children'][0] }
     ]
   },
   {
