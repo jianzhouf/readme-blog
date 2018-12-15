@@ -45,6 +45,7 @@ const sidebar = {
         'Django/templates_3',
         'Django/templates_4',
         'Django/templates_5',
+        'Django/database_1',
       ]
     }
   ],
