@@ -1,5 +1,5 @@
 ---
-title: 自定义模板过滤器
+title: Django 自定义模板过滤器
 lang: zh
 meta:
   - name: description

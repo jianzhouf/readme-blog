@@ -1,5 +1,5 @@
 ---
-title: 模板中加载静态文件
+title: Django 模板中加载静态文件
 lang: zh
 meta:
   - name: description

@@ -1,5 +1,5 @@
 ---
-title: 模板标签详解
+title: Django 模板标签详解
 lang: zh
 meta:
   - name: description

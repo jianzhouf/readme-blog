@@ -1,5 +1,5 @@
 ---
-title: 模板结构优化
+title: Django 模板结构优化
 lang: zh
 meta:
   - name: description

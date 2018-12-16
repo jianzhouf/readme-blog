@@ -1,5 +1,5 @@
 ---
-title: 模板过滤器详解
+title: Django 模板过滤器详解
 lang: zh
 meta:
   - name: description

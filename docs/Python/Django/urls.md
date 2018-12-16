@@ -1,5 +1,5 @@
 ---
-title: urls与视图详解
+title: Django urls与视图详解
 lang: zh
 meta:
   - name: description
